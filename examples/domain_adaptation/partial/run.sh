@@ -2,7 +2,7 @@
 # Office-Home 
 CUDA_VISIBLE_DEVICES=0 python source_only.py data/office-home -d OfficeHome -s Ar -t Cl -a resnet50 --epochs 5 -i 500 --seed 0 --log logs/officehome_src_only/OfficeHome_Ar2Cl  
 CUDA_VISIBLE_DEVICES=0 python source_only_ctr.py data/office-home -d OfficeHome -s Ar -t Cl -a resnet50 --src-ctr-factor 0.1 --cluster-momentum 0.99 --pretrain logs/officehome_src_only/ --epochs 1 -i 500 --seed 0 --log logs/officehome_src_only_ctr/OfficeHome_Ar2Cl  
-# CUDA_VISIBLE_DEVICES=0 python cwan.py data/office-home -d OfficeHome -s Ar -t Cl -a resnet50 --num-cluster 65 --mixing-factor 0.5 --factor1 0 --factor2 0.1 --factor3 1 --factor4 0.1 --cluster-momentum 0.99 --pretrain logs/officehome_src_only_ctr/ --epochs 30 --seed 0 --log logs/officehome_cwan/OfficeHome_Ar2Cl  
+CUDA_VISIBLE_DEVICES=0 python cwan.py data/office-home -d OfficeHome -s Ar -t Cl -a resnet50 --num-cluster 65 --mixing-factor 0.5 --factor1 0 --factor2 0.1 --factor3 1 --factor4 0.1 --cluster-momentum 0.99 --pretrain logs/officehome_src_only_ctr/ --epochs 30 --seed 0 --log logs/officehome_cwan/OfficeHome_Ar2Cl  
 
 # 
 # Office-31 
